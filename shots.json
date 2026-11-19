@@ -1,0 +1,6 @@
+[
+  { "file": "1-cover.jpg", "path": "/?shot=cover", "viewport": { "width": 1280, "height": 800 }, "shows": "Tracker overview, guide open with source" },
+  { "file": "2-guide.jpg", "path": "/?shot=guide", "viewport": { "width": 1280, "height": 800 }, "shows": "Story trophy guide, spoilers off" },
+  { "file": "3-roadmap.jpg", "path": "/?shot=roadmap", "viewport": { "width": 1280, "height": 800 }, "shows": "Six-stage roadmap and missable reasons" },
+  { "file": "4-filters.jpg", "path": "/?shot=filters", "viewport": { "width": 1280, "height": 800 }, "shows": "Story filter active, spoiler shield on" }
+]

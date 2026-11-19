@@ -1,0 +1,4 @@
+# Build output and local harness metadata are not part of the entry's authored sources.
+out/
+.makefun/
+legacy-shots/

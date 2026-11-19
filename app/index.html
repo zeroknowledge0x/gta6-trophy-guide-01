@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Legends - GTA VI Trophy Guide</title>
+<meta name="description" content="An offline, original GTA VI trophy guide and progress tracker for all 55 PlayStation trophies.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="shell">
+
+  <header class="masthead">
+    <div class="identity">
+      <div class="eyebrow"><span class="eyebrow-dot"></span> Leonida field guide · 55 trophies · offline edition</div>
+      <h1>Leonida Legends <span>GTA VI Trophy Guide</span></h1>
+      <p class="subtitle">Every official trophy, an original walkthrough, and a tracker that stays on your device.</p>
+    </div>
+    <div class="progress-card" aria-label="Overall trophy progress">
+      <div class="progress-top">
+        <span class="progress-label">Platinum progress</span>
+        <strong id="earned-count">0 / 55 earned</strong>
+      </div>
+      <div class="progress-track" role="progressbar" aria-label="Trophies earned" aria-valuemin="0" aria-valuemax="55" aria-valuenow="0" id="progress-track">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+      <div class="progress-bottom"><span id="progress-percent">0% complete</span><span>54 to go for platinum</span></div>
+    </div>
+  </header>
+
+  <section class="toolbar" aria-label="Tracker tools">
+    <label class="search-box">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.3"></circle><path d="M15.4 15.4 21 21"></path></svg>
+      <input id="search" type="search" placeholder="Search name, description or guide" autocomplete="off" spellcheck="false">
+    </label>
+    <div class="chips" id="chips" role="group" aria-label="Filter trophies by kind">
+      <button type="button" class="chip is-active" data-kind="all">All</button>
+      <button type="button" class="chip" data-kind="story">Story</button>
+      <button type="button" class="chip" data-kind="missable">Missable</button>
+      <button type="button" class="chip" data-kind="collectibles">Collectibles</button>
+      <button type="button" class="chip" data-kind="activities">Activities</button>
+      <button type="button" class="chip" data-kind="online">Online</button>
+    </div>
+    <label class="spoiler-toggle" title="Hide the names and descriptions of unearned story trophies">
+      <input id="spoilers" type="checkbox" checked>
+      <span class="switch" aria-hidden="true"></span>
+      <span>Hide story spoilers</span>
+    </label>
+    <div class="actions">
+      <button type="button" id="export" class="btn">Export</button>
+      <label class="btn btn-import">Import<input id="import" type="file" accept=".json,application/json"></label>
+      <button type="button" id="reset" class="btn btn-quiet">Reset</button>
+    </div>
+  </section>
+
+  <main class="workspace">
+    <section class="panel checklist" aria-labelledby="checklist-title">
+      <div class="panel-head">
+        <div><h2 id="checklist-title">Trophy checklist</h2><p>Tick what you have earned; select a row to read the guide.</p></div>
+        <span class="count-pill" id="list-count">55 shown</span>
+      </div>
+      <div class="rows" id="rows" role="list"></div>
+    </section>
+
+    <section class="panel detail" id="detail" aria-live="polite" aria-label="Trophy guide detail"></section>
+  </main>
+
+  <section class="below" id="roadmap-section" aria-labelledby="roadmap-title">
+    <div class="section-head">
+      <div>
+        <div class="section-kicker">The route to platinum</div>
+        <h2 id="roadmap-title">Roadmap</h2>
+        <p>Six stages, from the opening story to the last piece of cleanup. Work left to right.</p>
+      </div>
+      <span class="count-pill">6 stages</span>
+    </div>
+    <div class="roadmap-grid" id="roadmap"></div>
+  </section>
+
+  <section class="below" id="missables-section" aria-labelledby="missables-title">
+    <div class="section-head">
+      <div>
+        <div class="section-kicker">Watch these closely</div>
+        <h2 id="missables-title">Missables</h2>
+        <p>These trophies depend on a particular scene, request or window. Miss the moment and you may need a chapter replay.</p>
+      </div>
+      <span class="count-pill warn" id="missable-count">12 flagged</span>
+    </div>
+    <div class="missable-grid" id="missables"></div>
+  </section>
+
+  <footer class="footer">
+    <span>Leonida Legends · an independent guide, not affiliated with Rockstar Games or Sony.</span>
+    <span>All progress is saved locally in this browser. No account, no network.</span>
+  </footer>
+</div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
